@@ -8,6 +8,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    background-image: linear-gradient(60deg, #9b00f5, #f74079);
 }
 
 .container {
@@ -48,6 +49,7 @@ a {
 .event-container img {
     max-width: 30%;
     margin: 10px;
+    border: 10px solid white;
 }
 
 .event-container h4,
@@ -58,10 +60,15 @@ p {
 
 .event-container button {
     margin: 10px;
-    background: rgb(3, 132, 62);
+    background: rgb(0, 0, 0);
     border: none;
     padding: 7.5px;
     border-radius: 2px;
+}
+
+.event-container button {
+    background: rgb(3, 132, 62);
+    transition-duration: 0.9s;
 }
 
 .event-container button a {
