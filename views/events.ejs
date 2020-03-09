@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+
+    <div class="event-container">
+        <h1>
+            <%= postData.name %>
+        </h1>
+        <img src="<%= postData.cover_pic %> " alt="">
+
+        <p>
+            <%= postData.details %>
+        </p>
+
+        <h4>
+            <%= postData.email %>
+        </h4>
+        <h4>
+            <%= postData.year %>
+        </h4>
+        <h4>
+            <%= postData.no_of_ppl_registered %>
+        </h4>
+        <h4>
+            <%= postData.date %>
+        </h4>
+        <h4>
+            <%= postData.time %>
+        </h4>
+        <button><a href="/goback">GO BACK</a></button>
+    </div>
+
+    <%- include('partials/footer') %>
