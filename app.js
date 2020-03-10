@@ -24,7 +24,7 @@ axios.get('https://ecell.nitrr.ac.in/events/list/2019/?format=json')
     });
 
 app.get('/', function(req, res) {
-    res.render("index", { pdata: newData });
+    res.render("index", { pData: newData });
 
 })
 

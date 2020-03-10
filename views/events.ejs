@@ -1,28 +1,34 @@
 <%- include('partials/header') %>
 
     <div class="event-container">
-        <h1>
+        <h1 class="shadow"><em>
             <%= postData.name %>
-        </h1>
-        <img src="<%= postData.cover_pic %> " alt="">
-
-        <p>
-            <%= postData.details %>
-        </p>
-
-        <h4>
-            <%= postData.email %>
+        </em></h1>
+        <div class="flex-container">
+            <div class="image">
+                <img src="<%= postData.cover_pic %> " alt="">
+            </div>
+            <div class="desc">
+                <p>
+                    <%= postData.details %>
+                </p>
+            </div>
+        </div>
+        <h4 class="data">
+            <a href="mailto:<%= postData.email %>">
+                <%= postData.email %>
+            </a>
         </h4>
-        <h4>
+        <h4 class="data">Year:
             <%= postData.year %>
         </h4>
-        <h4>
+        <h4 class="data">Total Registered:
             <%= postData.no_of_ppl_registered %>
         </h4>
-        <h4>
+        <h4 class="data">Date of Event:
             <%= postData.date %>
         </h4>
-        <h4>
+        <h4 class="data">Time:
             <%= postData.time %>
         </h4>
         <button><a href="/goback">GO BACK</a></button>

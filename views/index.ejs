@@ -1,14 +1,24 @@
 <%- include('partials/header') %>
-    <h3>Events</h3>
-    <div class="home-container">
+    <h2 class="shadow"><em>Events</em></h2>
+    <div class="home-container grid">
 
-        <% for(let i=0; i<pdata.length; i++) {%>
+        <% for(let i=0; i<pData.length; i++) {%>
 
-            <h5>
-                <a href="/events/<%=pdata[i].id %>/">
-                    <%= pdata[i].name %>
-                </a>
-            </h5>
+            <div class="items">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img class="shadow" src="<%= pData[i].cover_pic %> " alt="">
+                        </div>
+                        <div class="card-rear">
+                            <p class="name">
+                                <%= pData[i].name %>
+                            </p>
+                            <button><a href="/events/<%= pData[i].id %>">KNOW MORE</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <% } %>
     </div>
     <%- include('partials/footer') %>
